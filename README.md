@@ -15,7 +15,7 @@ Flask REST Forms provides a transparent interface for adding REST-like forms to 
 Install the extension with pip:
 
 ```sh
-$ pip install -U flask-rest-forms
+$ pip install -U flask-restforms
 ```
 
 ## Usage

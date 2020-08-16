@@ -6,7 +6,7 @@ from jinja2.lexer import Token
 
 
 class FlaskRestForms:
-    DEFAULT_METHOD_FIELD = '__flask-rest-forms-method'
+    DEFAULT_METHOD_FIELD = '__flask-restforms-method'
 
     def __init__(self, app):
         self.app = app
