@@ -1,11 +1,7 @@
-"""
-Flask-RestForms
--------------
-
-Add REST superpowers to your Jinja templates
-"""
 from setuptools import setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setup(
     name='Flask-RestForms',
@@ -16,7 +12,8 @@ setup(
     author='Alan Munguia Cerda',
     url='https://www.github.com/alanmunguiacerda/flask-restforms/',
     keywords=['FLASK', 'JINJA', 'REST', 'MPA'],
-    long_description=__doc__,
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     zip_safe=False,
     include_package_data=True,
     platforms='any',
