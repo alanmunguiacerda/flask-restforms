@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setup(
     name='Flask-RestForms',
     packages=['flask_restforms'],
-    version='0.1',
+    version='0.1.1',
     license='MIT',
     description='Add REST superpowers to your Jinja templates',
     author='Alan Munguia Cerda',
