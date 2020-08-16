@@ -1,6 +1,6 @@
 # Flask REST Forms
 
-Badges
+[![PyPI version](https://badge.fury.io/py/Flask-RestForms.svg)](https://badge.fury.io/py/Flask-RestForms)
 
 Flask REST Forms provides a transparent interface for adding REST-like forms to your Jinja templates.
 
@@ -15,7 +15,7 @@ Flask REST Forms provides a transparent interface for adding REST-like forms to 
 Install the extension with pip:
 
 ```sh
-$ pip install -U flask-restforms
+$ pip install -U Flask-RestForms
 ```
 
 ## Usage
