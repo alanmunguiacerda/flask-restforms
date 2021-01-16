@@ -3,6 +3,7 @@ import re
 from jinja2.ext import Extension
 from jinja2.lexer import count_newlines
 from jinja2.lexer import Token
+from werkzeug.wrappers import Request
 
 
 class FlaskRestForms:
@@ -82,15 +83,12 @@ class RestFormsMiddleware:
         self.method_field = method_field
 
     def __call__(self, environ, start_response):
-        request = self._get_request(environ)
+        request = Request(environ)
         method = self._get_method_field_value(request)
         if method:
             environ['REQUEST_METHOD'] = method
 
         return self.app(environ, start_response)
-
-    def _get_request(self, environ):
-        return environ['werkzeug.request']
 
     def _get_method_field_value(self, request):
         return request.form.get(self.method_field)
